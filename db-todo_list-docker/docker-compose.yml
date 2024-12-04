@@ -1,0 +1,11 @@
+services:
+  mysql:
+    container_name: 'todo-db'
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=todo-db'
+      - 'MYSQL_PASSWORD=admin'
+      - 'MYSQL_ROOT_PASSWORD=admin'
+      - 'MYSQL_USER=user'
+    ports:
+      - '3306:3306'
